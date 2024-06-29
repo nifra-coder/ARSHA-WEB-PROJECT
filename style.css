@@ -49,7 +49,7 @@ header {
 
 
 
-.section__container {}
+
 
 .section__header {
 
@@ -71,10 +71,9 @@ header {
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
-    position: fixed;
-    top: 18px;
-    right: 150px;
-
+    position: absolute;
+    right: 9em;
+    top: 2em;
 }
 
 .btn1 {
@@ -104,6 +103,9 @@ header {
     line-height: 1;
 
 }
+ #barrss{
+    display: none;
+}
 
 #play {
     font-size: 30px;
@@ -121,21 +123,19 @@ header {
     background-color: #4561ff;
 
 }
-
-img {
-    width: 50%;
-    display: flex;
-    margin-left: -173px;
+img#headerimage {
+    width: 490px;
+    height: 490px;
 }
+
 
 /* the logo Arsha */
 .log {
     text-decoration: none;
     color: var(--white);
-    margin-left: 63px;
     font-size: 25px;
-    margin-right: 290px;
     font-weight: 600;
+   margin: 0px 100px 0px 100px;
 }
 
 a {
@@ -208,12 +208,12 @@ nav {
 
 .header__container {
     position: relative;
-    padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
+    /* height: 550px; */
 }
 
 .header__content {
@@ -249,7 +249,6 @@ nav {
 
 .header__image {
     position: relative;
-    right: -100px;
     animation: moveUpDown 3s linear infinite alternate;
     /* Adjust animation duration (5s) as needed */
     transition: all;
@@ -278,23 +277,25 @@ nav {
     display: inline-block;
     padding: 15px 0;
     filter: grayscale(100);
-    margin-left: 80px;
-    margin-right: 40px;
-    margin-top: 30px;
+   
 
 }
 
-.row__imglogo {
+.row__imageslogo {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 22px;
+    gap: 10%;
+    width: 100%;
+    
 }
 
-.closer {
-    margin: 40px;
-}
+
 
 .container {
     background-color: rgb(236, 231, 231);
-    margin-top: -40px;
+    /* margin-top: -40px; */
     height: 160px;
 
 }
@@ -330,6 +331,8 @@ nav {
     height: 1px;
     background: #ddd;
     bottom: 1px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .section-title h2::after {
@@ -350,7 +353,7 @@ nav {
     gap: 2rem;
     max-width: var(--max-width);
     margin: auto;
-    padding: 1rem 1rem;
+    padding: 1rem 4rem;
     height: 450px;
 
 }
@@ -419,11 +422,11 @@ nav {
 #rightimage {
     height: 500px;
     width: 500px;
-    margin: 33px;
+    /* margin: 33px; */
 }
 
 .leftcontent {
-    width: 50%;
+   width: 50% ;
     margin-top: 80px;
 
 }
@@ -442,13 +445,12 @@ nav {
 
 #accordian {
     margin: 100px auto;
-    width: 600px;
 
 }
 
 #accordian li {
     list-style: none;
-    width: 60%;
+    width: 100%;
     margin-bottom: 10px;
     background: #fff;
     padding: 10px;
@@ -505,7 +507,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.barr {}
+
 
 .contentbar {
     width: 700px;
@@ -757,7 +759,6 @@ nav {
 
 
 .headone {
-    width: 800px;
     padding: 3em;
 }
 
@@ -841,8 +842,8 @@ nav {
 }
 
 .container5 {
-    margin-left: 290px;
-
+    width: 90%;
+    margin: auto;
 }
 
 .container5 .portbox {
@@ -911,16 +912,14 @@ nav {
     background: #fff;
     height: 230px;
     width: 440px;
+    padding: 20px;
     margin-bottom: 80px;
     display: flex;
-
-
+    align-items: center;
 }
 
 .team-member {
-
-    padding-left: 13em;
-    padding-top: 1em;
+    padding: 12px 22px;
 }
 
 .team-box .team-member p {
@@ -961,9 +960,7 @@ nav {
     border-radius: 100px;
     height: 150px;
     width: 150px;
-    position: relative;
-    top: 31px;
-    right: -203px;
+   
 
 }
 
@@ -1358,7 +1355,9 @@ nav {
 .subscription {
     background-color: #edf0f8;
 }
-
+.container9{
+    height: 200px;
+}
 .topic h1 {
     color: #37517e;
     text-align: center;
@@ -1381,26 +1380,31 @@ nav {
 
 .container9 input {
     display: flex;
-    margin: 0 auto;
     width: 500px;
     height: 40px;
     border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #37517e;
 }
 
 .container9 .subs-btn {
-    padding: 0.7rem 2rem;
+    padding: 10px 2rem;
     outline: none;
-    border: 2.5px solid rgb(72, 203, 226);
+    border: 1.5px solid rgb(72, 203, 226);
     font-size: 1rem;
     color: var(--white);
     background-color: rgb(72, 203, 226);
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
+    position: absolute;
+    right: 26em;
+    /* margin: 0 auto; */
+    bottom: 0px;
+}
+.downnn {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
     position: relative;
-    top: -43px;
-    right: -223px;
 }
 
 .subs-btn:hover {
