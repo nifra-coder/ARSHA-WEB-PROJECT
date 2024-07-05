@@ -1,10 +1,26 @@
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1050px) {
     .link {
         display: none;
     }
+    .content {
+        width: 99%;
+        margin: 0 auto;
+        padding: 10px;
+    }
     .leftcontent {
-        /* width: 50%; */
-        margin-top: 80px;
+        width: 85%;
+        padding-top: 48px;
+        /* margin-top: 80px; */
+        margin: 0 auto;
+    }
+    .left_content p {
+        color: rgb(82, 79, 79);
+        padding: 4px 0px;
+        font-weight: 400;
+    }
+    .header__content {
+        width: 550px;
+        margin-top: 8em;
     }
 
     #accordian1 li label {
@@ -20,8 +36,9 @@
 
     .row_content {
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
-        gap: 1rem;
+        /* gap: 1rem; */
         /* flex-wrap: wrap; */
         margin-bottom: 30px;
         /* height: 200px; */
@@ -35,7 +52,7 @@
         max-width: var(--max-width);
         margin: auto;
         padding: 1rem 0rem;
-        height: 450px;
+        /* height: 450px; */
     }
     .container9 .subs-btn {
         padding: 10px 2rem;
@@ -51,9 +68,43 @@
         /* margin: 0 auto; */
         bottom: 0px;
     }
-
+    .row__imageslogo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 22px;
+        gap: 4%;
+        width: 100%;
+    }
+    #cta-btn {
+        padding: 0.2rem 0.4rem;
+        outline: none;
+        border: 2.5px solid white;
+        font-size: 15px;
+        color: var(--white);
+        background-color: #0f1d36;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        position: absolute;
+        top: 3.5em;
+        right: 3em;
+        font-weight: 600;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        flex-wrap: wrap;
+        width: 93%;
+    }
 }
-
+@media screen and (max-width:1030px){
+#barrss{
+    display: block;
+}
+}
 
 @media screen and (max-width:700px) {
     .link {
@@ -106,6 +157,9 @@
         font-weight: 500;
         cursor: pointer;
         color: #37517e;
+    }
+    #barrss{
+        display: block;
     }
 }
 
@@ -202,11 +256,7 @@
     
     #barrss{
         display: block;
-        position: absolute;
-        top: 2em;
-        color: white;
-        right: 1.5em;
-        font-size: 19px;
+        
     }
 
 
